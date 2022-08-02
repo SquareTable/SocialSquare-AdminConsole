@@ -1,0 +1,21 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+#loginButton {
+  min-width: 10vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
