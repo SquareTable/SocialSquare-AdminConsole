@@ -10,19 +10,23 @@ import {
  } from 'react-router-dom'
 import Login from './routes/login';
 import { CredentialsContext } from './components/CredentialsContext';
+import { ServerUrlContext } from './components/ServerUrlContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const ToRender = () => {
-  const [storedCredentials, setStoredCredentials] = useState(null)
+  const [storedCredentials, setStoredCredentials] = useState({name: 'Sebastian'})
+  const [serverUrl, setServerUrl] = useState('http://it-solutions.homedns.org:9443')
   return(
     <React.StrictMode>
       <CredentialsContext.Provider value={{storedCredentials, setStoredCredentials}}>
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<App/>}/>
-            <Route path="/login" element={<Login/>}/>
-          </Routes>
-        </BrowserRouter>
+        <ServerUrlContext.Provider value={{serverUrl, setServerUrl}}>
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<App/>}/>
+              <Route path="/login" element={<Login/>}/>
+            </Routes>
+          </BrowserRouter>
+        </ServerUrlContext.Provider>
       </CredentialsContext.Provider>
     </React.StrictMode>
   )
