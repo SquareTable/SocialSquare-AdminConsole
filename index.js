@@ -7,7 +7,7 @@ ports.forEach(port => {
 })
 
 servers.forEach((server, index) => {
-    server.use('/', express.static('/public'))
+    server.use('/', express.static('public'))
 
     server.listen(ports[index], () => {
         console.log(`Server ${index + 1} is listening on port ${ports[index]}`)
