@@ -1,3 +1,7 @@
+The SocialSquare Admin Console application
+Copyright (c) SquareTable
+Licensed on the terms of The Artistic License 2.0
+
 Artistic License 2.0
 SPDX short identifier: Artistic-2.0
 
