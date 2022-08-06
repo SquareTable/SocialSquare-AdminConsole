@@ -1,7 +1,5 @@
-The SocialSquare Admin Console application
-
-Copyright (c) SquareTable
-
+The SocialSquare Admin Console application<br>
+Copyright (c) SquareTable<br>
 Licensed on the terms of The Artistic License 2.0
 
 
